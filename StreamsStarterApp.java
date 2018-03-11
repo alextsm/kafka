@@ -1,4 +1,4 @@
-package com.github.simplesteph.kafka.streams.course;
+package com.github.alextsm.kafka;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.kstream.*;
