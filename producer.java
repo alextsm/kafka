@@ -56,7 +56,7 @@ public class producer {
         double Low = 1.50;
         double High = 3.50;
 
-        for(int i = 0; i < 1; i++) {
+        for(int i = 0; i < 200; i++) {
 
             double random = new Random().nextDouble();
             double result = Low + (random * (High - Low));
