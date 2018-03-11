@@ -28,7 +28,7 @@ public class StreamsStarterApp {
         intermediatetopic.to("currentdata", Produced.with(Serdes.String(), Serdes.Double()));
         KTable<String, Double> currentdata = builder.table("currentdata");
 
-        // Just for output key:value to console to control the input data
+        // Just for output key:value to console to control the input data 
         inputTopicData.foreach((key, value) -> System.out.println(key + " =>---------------------- " + value));
         // Group by key
         KGroupedStream<String, Double> groupedStream = inputTopicData.groupByKey();
